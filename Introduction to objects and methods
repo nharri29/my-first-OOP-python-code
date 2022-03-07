@@ -1,0 +1,32 @@
+#%% Objects
+x = 1
+print(type(x)) # this prints out the object's class
+
+#%% Introduction to Methods
+
+# string = "hello"
+# print(string.upper()) # the method upper make all characters in the string uppercase
+
+class dog: # we have just created a new class
+    def __init__(self, name, age): # the __init__ allows us to treat dog as a function
+        self.name = name # this allows us to save the attribute called name 
+        self.age  = age
+        
+    def get_name(self):
+        return self.name
+    
+    def get_age(self):
+        return self.age
+    
+    def set_age(self, age): # this method can change the attributes of prevously defined attributes
+        self.age = age
+        
+
+        
+#  end of all things that define dog class 
+        
+
+d = dog("mr.bigglesworth", 10) # names of the dogs
+d.set_age(20) # this can change the age of the dog
+
+print(d.get_name(), d.get_age()) # this command will print the name and age of the dog
